@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- CDN Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CDN Iconos de Bootstrap  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- fav icon de la pagina que aparece en la pestaña  -->
+  <link rel="shortcut icon" href="./assets/code.svg" type="image/x-icon">
+  <!-- Fonts de google  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Monsunshinee</title>
+</head>
+
+<body>
+  <!-- Navegador menu  -->
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <i class="bi bi-code p-2"></i>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Monsunshinee</a></li>
+          <li><a href="#habilidades" class="nav-link px-2 link-body-emphasis">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link px-2 link-body-emphasis">Proyectos</a></li>
+          <li><a href="#certificaciones" class="nav-link px-2 link-body-emphasis">Certificaciones</a></li>
+          <li><a href="#contacto" class="nav-link px-2 link-body-emphasis">Contacto</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- hero  -->
+    <div class="hero">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="./assets/yomerengues.jpg" alt="" width="200">
+        <h1 class="display-5 fw-bold text-body-emphasis">Monserrat Álvarez</h1>
+        <!-- texto de typewritter, se esta haciendo la referencia con id para que lo haga main.js  -->
+        <h2 id="app"></h2>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Soy Monse, una persona creativa y sencilla que disfruta de los pequeños placeres como
+            pintar mientras escucho podcasts o tomarme un café tranquila en una cafetería. Me organizo con mi agenda
+            porque sin ella estaría perdida, y aunque a veces me preocupo demasiado por el futuro, siempre trato de
+            enfocarme en lo bueno. Me encanta aprender cosas nuevas, andar en proyectos y largas caminatas en la
+            naturaleza.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 boton-cv">Link al CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sección de habilidades  -->
+    <div class="caja-habilidades">
+      <div class="habilidades container px-4 py-5" id="habilidades">
+        <h2 class="pb-2 border-bottom">Habilidades</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-laptop px-1"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
+              <p>He creado sitios web responsivos aplicando los conocimientos obtenidos durante el bootcamp de
+                Technolochicas PRO.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-brush px-1"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Creatividad y diseño</h3>
+              <p>Capacidad para generar ideas innovadoras y plasmarlas en diseños que comuniquen mensajes de manera
+                clara y
+                estetica.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-gear px-1"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Organización</h3>
+              <p>Experiencia en planificar, priorizar y coordinar tareas para garantizar la entrega de proyectos dentro
+                del plazo y con la máxima calidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- seccion de proyectos  -->
+    <div class="proyectos container mt-5" id="proyectos">
+      <h2 class="pb-2 border-bottom">Proyectos</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- imagen del proyecto -->
+            <img class="bd-placeholder-img card-img-top" src="./assets/Miprimerapaginaoffice.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Mi primera pagina</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://mi-primera-pagina-seven.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/monsunshinee/MiPrimeraPagina">Github</a></button>
+                </div>
+                <small class="text-muted">HTML y CSS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2do cuadrito  -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./assets/clondepinterestimage.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Clon de Pinterest</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://pinterest-clon-delta.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://github.com/monsunshinee/pinterest-clon">Github</a></button>
+                </div>
+                <small class="text-muted">HTML CSS y JS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tercer cuadrito  -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cuarta columna  -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- quinta columna  -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carrusel de Certificaciones  -->
+    <div id="certificaciones" class="certificaciones container mt-5">
+      <h2 class="pb-2 border-bottom">Certificaciones</h2>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="d-flex justify-content-center">
+              <!-- card 1 -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/insignia.udemy.FundamentosDeProgramacion.jpg" class="card-img-top" alt="...">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                </div>
+              </div>
+              <!-- fin card  -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- card 2 -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/UC-React desde cero.jpg" class="card-img-top" alt="...">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                </div>
+              </div>
+              <!-- fin card  -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- card 3 -->
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/udemy-diseño-web.jpg" class="card-img-top" alt="...">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                </div>
+              </div>
+              <!-- fin de cards  -->
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- contacto  -->
+    <div id="contacto" class="px-4 py-5 my-5 text-center">
+      <i class="d-block mx-auto mb-4 fs-1 bi bi-envelope"></i>
+      <h1 class="display-5 fw-bold">Contacto</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Cuentame, estoy a un clic de distancia, lista para iniciar juntos un proyecto.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="mailto:monserrat23071@gmail.com">
+            <button id="btn-contacto" type="button" class="btn btn-light btn-lg px-4 gap-3">Hablemos</button>
+          </a>
+        </div>
+      </div>
+    </div>
+      <!-- redes de contacto  -->
+        <ul class="nav justify-content-center bosrder-bottom pb-3 mb-3">
+          <li class="nav-item"><a target="_blank" class="nav link px-2" href="https://www.facebook.com/monse2307"><i
+                class="bi bi-facebook"></i><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+          <li class="ms-3"><a target="_blank" class="text-body-secondary"
+              href="https://www.linkedin.com/in/monserrat-alvarez-vi/"><i class="bi bi-linkedin"></i><svg class="bi"
+                width="24" height="24">
+                <use xlink:href="#linkedin"></use>
+              </svg></a></li>
+          <li class="ms-3"><a target="_blank" class="text-body-secondary" href="https://github.com/monsunshinee"><i
+                class="bi bi-github"></i><svg class="bi" width="24" height="24">
+                <use xlink:href="#Github"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+  </main>
+  <!-- footer donde viene la creacion y fecha etc  -->
+  <footer class="d-flex flex-wrap justify-content-center py-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-body-secondary">Created by Monserrat Álvarez on bootcamp in <a
+          href="https://tecnolochicas.mx/">TecnolochicasPro</a></span>
+    </div>
+
+  </footer>
+
+
+  <!-- CDN bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- CDN typewriterJS v2  -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- main JS  -->
+  <script src="main.js"></script>
+</body>
+
+</html>
