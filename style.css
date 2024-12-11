@@ -2,17 +2,19 @@
     font-family: "Montserrat", sans-serif;
 }
 header {
-    background-color: #D8E2DC;
+    background-color: #F4ACB7;
 }
 #app {
     color: #F4ACB7;
 }
 .boton-cv {
     background-color:#9D8189;
-    color: #D8E2DC;
+}
+.boton-cv a {
+    text-decoration: none;
 }
 .caja-habilidades {
-    background-color: #F4ACB7;
+    background-color: #D8E2DC;
     color: #003049;
 }
 .btn-proyecto {
@@ -33,6 +35,9 @@ header {
     color: #003049;
     border-color: #d8e2dc;
 }
-#btnc-contacto{
-    background-color: #8d99ae;
+#btn-contacto{
+    background-color: #D8E2DC;
+}
+#btn-contacto ::hover{
+    background-color: #84c1e2;
 }
